@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #24355C;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #24355C;
+  }
+}
+
+@media (min-width: 768px) {
+    .media .avatar {
+        width: 180px;
+        height: 180px;
+        border-radius: 6px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .media .avatar {
+        width: 160px;
+    }
+}
+
+html,
+body,
+header,
+#intro {
+    height: 90%;
+}
+
+#header, #main {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Markazi Text', serif;
+    font-size: 1.4rem;
+}
+
+#intro {
+    background: url("../img/bg-mac.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-nav-collapse {
+    background-color: #24355C;
+}
+
+ul#menuItem li.selected {
+    font-weight: 700 !important;
+}
+
+#career p {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-size: 1.2rem;
+}
+
+.chart {
+    /*background: #212733;*/
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(25,25,25,.27);
+    margin: 25px 0
+}
