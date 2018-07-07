@@ -6,7 +6,7 @@ $(function() {
             icons: [
                 { title: "Email", target: "", href: "mailto:pradip9102@gmail.com", class: "fa fa-envelope" },
                 { title: "GitHub", target: "_blank", href: "https://github.com/pradip9102", class: "fa fa-github-square" },
-                { title: "LinkedIn", target: "_blank", href: "https://www.linkedin.com/in/pradip112015/", class: "fa fa-linkedin" },
+                { title: "LinkedIn", target: "_blank", href: "http://htmlpreview.github.io/?https://github.com/pradip9102/portfolio/blob/master/src/main/resources/templates/resume.html", class: "fa fa-linkedin" },
                 { title: "Resume", target: "_blank", href: "resume.html", class: "fa fa-file-pdf-o" }
             ],
             intro: { name: "Pradip Kumar Maharana", profession: "Software Developer", avatar: "avatar_profile_2.jpg" }
