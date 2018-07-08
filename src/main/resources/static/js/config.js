@@ -9,7 +9,7 @@ $(function() {
                 { title: "LinkedIn", target: "_blank", href: "https://www.linkedin.com/in/pradip112015/", class: "fa fa-linkedin" },
                 { title: "Resume", target: "_blank", href: "https://rawgit.com/pradip9102/portfolio/master/src/main/resources/templates/resume.html", class: "fa fa-file-pdf-o" }
             ],
-            intro: { name: "Pradip Kumar Maharana", profession: "Software Developer", avatar: "avatar_profile_2.jpg" }
+            intro: { name: "Pradip Kumar Maharana", profession: "Software Developer", avatar: "avatar_profile_3.jpg" }
         }
     });
 
