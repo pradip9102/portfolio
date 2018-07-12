@@ -69,3 +69,7 @@ ul#menuItem li.selected {
     width: auto;
     height: auto;
 }
+
+#projects .card {
+    height: 100%;
+}
