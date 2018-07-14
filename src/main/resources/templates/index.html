@@ -43,6 +43,11 @@
 				<!-- Collapsible content -->
 				<div class="collapse navbar-collapse" id="basicNav">
 					<ul class="navbar-nav mr-auto smooth-scroll text-uppercase">
+						<li class="nav-item m-0">
+							<a class="nav-link waves-effect waves-light py-0 pl-0" :href="'#'">
+								<img :src="'../static/img/' + logo" class="d-flex mb-3 avatar" style="width: 32px; height: 32px; border-radius: 50%;" :alt="intro.name">
+							</a>
+						</li>
 						<li class="nav-item" v-for="menu in menus">
 							<a class="nav-link waves-effect waves-light" :href="'#' + menu.toLowerCase()">{{ menu }}</a>
 						</li>
@@ -142,7 +147,7 @@
 		<hr/>
 		<section id="about">
 			<h2 class="display-4 text-center my-4">{{ about.title }}</h2>
-			<p>{{ about.text }}</p>
+			<div class="text-center" v-html="about.text"></div>
 		</section>
 
 		<hr/>
@@ -194,7 +199,14 @@
 			<div class="row">
 				<div v-for="project in projects" class="col-sm-12 col-md-6 col-lg-4 mb-4">
 					<div class="card card-body">
-						<h4 class="card-header font-weight-bold text-center text-white light-blue lighten-1 mb-0"><strong>{{ project.name }}</strong></h4>
+						<h4 class="card-header font-weight-bold text-center text-white primary-color mb-0" v-if="project.type === 'work'">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+							<em class="ml-1">{{ project.name }}</em>
+						</h4>
+						<h4 class="card-header font-weight-bold text-center text-white success-color mb-0" v-if="project.type === 'study'">
+							<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+							<em class="ml-1">{{ project.name }}</em>
+						</h4>
 						<hr class="mt-0"/>
 						<p class="card-text">{{ project.description }}</p>
 					</div>
@@ -210,7 +222,7 @@
 
 		<hr/>
 		<section id="contact">
-			<h2 class="display-4 mb-5 text-center">Contact me</h2>
+			<h2 class="display-4 mb-5 text-center">Let's chat...</h2>
 			<div class="row">
 				<div class="col-lg-5 col-md-12">
 					<form class="p-5">

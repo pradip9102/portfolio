@@ -27,7 +27,7 @@ html,
 body,
 header,
 #intro {
-    height: 90%;
+    height: 95%;
 }
 
 #header, #main {
@@ -37,7 +37,7 @@ header,
 }
 
 #intro {
-    background: url("../img/bg-mac.jpg")no-repeat center center fixed;
+    background: url("../img/bg-03-collage.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

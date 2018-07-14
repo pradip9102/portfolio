@@ -2,7 +2,8 @@ $(function() {
 	new Vue({
         el: '#header',
         data: {
-            menus: ["About", "Career", "Skills", "Projects", "Blog"],
+            logo: "avatar_profile_3.jpg",
+            menus: ["About", "Career", "Skills", "Projects", "Contact"],
             icons: [
                 { title: "Email", target: "", href: "mailto:pradip9102@gmail.com", class: "fa fa-envelope" },
                 { title: "GitHub", target: "_blank", href: "https://github.com/pradip9102", class: "fa fa-github-square" },
@@ -18,7 +19,7 @@ $(function() {
         data: {
             about: {
                 title: 'About me',
-                text: 'A Software developer with almost 3 years of professional experience having proficiency in Kotlin and Java with direct involvement in development of two client facing applications from scratch. Also have hands on experience on several cutting edge technologies as Spring Boot, Hibernate, Gradle, Vue, JFrog Artifact Repository, Jenkins, VCS (i.e. GitHub and Subversion), OAuth Authentication etc.'
+                text: "<p>Hi! I am <b style=\"font-weight: bold;\">Pradip Kumar Maharana</b>, just another graduate, who completed degree from NIT Raipur with major in ET&T. As being a practically involved aspirant, I spent most of my time working in different kind of projects (e.g. health related, robotics, image processing, etc). And soon enough I started feeling my groove in coding instead of chips and circuits despite taking that whole month long robotics training programme during second semester. So.. that's how I got into programming.</p><p>Now, I cut my creative teeth here in Mumbai, where for over three years I've been collaborating with an amazing team of professionals - creating web applications that deliver the best UI/UX with the fastest possible response time and the quality comes by default. I have been part of the design process of complex components in early stages of application development, witnessed two projects going live from scratch as a core team member and also experienced those critical moments of production support. And when I'm done, I just sit back with pounding of rock music and solve rubik's cube or go out with friends to feel the beauty of nature or ...</p>"
             },
             career: [
                 {
@@ -26,14 +27,14 @@ $(function() {
                     organisation: "Virbac, India",
                     designation: "Senior software developer - IT Offshore",
                     description: "Being part of the IT Offshore team in India catering to requirements and specifications received from France (HQ) for International projects. To develop software, testing, implementation of end deliverables and conduct support operations for projects undertaken.",
-                    duration: "April 2018 - Present"
+                    duration: "July 2018 - Present"
                 },
                 {
                     type: 'work',
                     organisation: 'Virbac, India',
                     designation: 'Software developer - IT Offshore',
                     description: 'Being part of the IT Offshore team in India catering to requirements and specifications received from France (HQ) for International projects. To develop software, testing, implementation of end deliverables and conduct support operations for projects undertaken.',
-                    duration: 'August 2015 - March 2018'
+                    duration: 'August 2015 - June 2018'
                 },
                 {
                     type: 'study',
@@ -64,30 +65,37 @@ $(function() {
             },
             projects: [
                 {
+                    type: "work",
                     name: "e-Perf",
                     description: "An important step towards the digitalisation of Human Resources at Virbac group. The collaborative tool allows employees and managers to participate/validate/acknowledge Job descriptions, Objectives and Appraisals."
                 },
                 {
+                    type: "work",
                     name: "SpeedReader",
                     description: "SpeedReader is a device that generates diagnostic results from blood sample. Project consists of REST web services to synchronize data to centralised server for analysis."
                 },
                 {
+                    type: "work",
                     name: "MPW-VET",
                     description: "It helps veterinarians to manage their client pets and shipping pet-food packages to their respective pet owners. It is also capable of broadcasting health tips for pets based on different weather conditions."
                 },
                 {
+                    type: "work",
                     name: "MPW",
                     description: "MPW is abbreviation for “My Pet Watcher”. Pet owners are the potential users of this application with its reach being global. The main purpose of this application was to provide pet owners an efficient source and easy to use interface for tracking their pet’s health conditions continuously."
                 },
                 {
+                    type: 'study',
                     name: "Angle estimator",
                     description: "Proposed a novel technique for blur angle estimation using the values of SUMFC of a blurred image. Development and comparison of different algorithms used for detection and restoration using matlab."
                 },
                 {
+                    type: 'study',
                     name: "Object approximator",
                     description: "Identify and draw the outline of the object situated within a specified distance and calculate approximate dimension of the target object."
                 },
                 {
+                    type: 'study',
                     name: "Eye glucose meter",
                     description: "Replicate the functionality of the actual glucose meter, but is based on the fact that “Glucose rotates linearly polarized light”."
                 }
