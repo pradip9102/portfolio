@@ -126,10 +126,15 @@ $(function() {
 
     // intro animation
     $('#intro').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        $("#intro .avatar").removeClass('invisible').addClass('animated fadeInDown');
+        $('#intro .avatar').removeClass('invisible').addClass('animated fadeInDown');
     });
     $('#intro .avatar').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        $("#intro h2:eq(0)").removeClass('invisible').addClass('animated slideInRight');
-        $("#intro h2:eq(1)").removeClass('invisible').addClass('animated slideInLeft');
+        $('#intro h2:eq(0)').removeClass('invisible').addClass('animated slideInRight');
+        $('#intro h2:eq(1)').removeClass('invisible').addClass('animated slideInLeft');
+    });
+
+    // about animation
+    $('#about h2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        $('#about div').removeClass('invisible').addClass('animated  fadeInRight');
     });
 });
