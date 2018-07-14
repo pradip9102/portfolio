@@ -74,6 +74,13 @@ ul#menuItem li.selected {
     height: 100%;
 }
 
+a.anchor {
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
+}
+
 .wow {
     visibility: hidden;
 }
