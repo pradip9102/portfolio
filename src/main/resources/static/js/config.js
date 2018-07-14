@@ -134,7 +134,7 @@ $(function() {
     });
 
     // about animation
-    $('#about h2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    /*$('#about h2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
         $('#about div').removeClass('invisible').addClass('animated  fadeInRight');
-    });
+    });*/
 });
