@@ -42,7 +42,7 @@
 
 				<!-- Collapsible content -->
 				<div class="collapse navbar-collapse" id="basicNav">
-					<ul class="navbar-nav mr-auto smooth-scroll text-uppercase">
+					<ul class="navbar-nav mr-auto smooth-scroll text-uppercase wow slideInLeft">
 						<li class="nav-item m-0">
 							<a class="nav-link waves-effect waves-light py-0 pl-0" :href="'#'">
 								<img :src="'../static/img/' + logo" class="d-flex mb-3 avatar" style="width: 32px; height: 32px; border-radius: 50%;" :alt="intro.name">
@@ -52,7 +52,7 @@
 							<a class="nav-link waves-effect waves-light" :href="'#' + menu.toLowerCase()">{{ menu }}</a>
 						</li>
 					</ul>
-					<ul class="navbar-nav nav-flex-icons">
+					<ul class="navbar-nav nav-flex-icons wow slideInRight">
 						<li class="nav-item" v-for="icon in icons">
 							<a class="nav-link waves-effect waves-light" :title="icon.title" :href="icon.href" :target="icon.target">
 								<i :class="icon.class"></i>
@@ -122,19 +122,19 @@
 		</div>-->
 
 
-		<div id="intro" class="view">
+		<div id="intro" class="view wow fadeIn">
 			<div class="mask rgba-black-strong">
 				<div class="container-fluid d-flex align-items-center justify-content-center h-100">
 					<div class="row d-flex justify-content-center text-center">
 						<div class="col-md-12">
 							<div class="container">
 								<div class="media d-block d-md-flex mt-4">
-									<img class="d-flex mb-3 mx-auto avatar" :src="'../static/img/' + intro.avatar">
+									<img class="d-flex mb-3 mx-auto avatar invisible" :src="'../static/img/' + intro.avatar">
 								</div>
 							</div>
 							<!--<hr class="hr-light">-->
-							<h2 class="display-4 white-text pt-2">{{ intro.name }}</h2>
-							<h2 class="white-text my-2">{{ '{ ' + intro.profession + ' }' }}</h2>
+							<h2 class="display-4 white-text pt-2 invisible">{{ intro.name }}</h2>
+							<h2 class="white-text my-2 invisible">{{ '{ ' + intro.profession + ' }' }}</h2>
 							<!--<button type="button" class="btn btn-outline-white waves-effect waves-light">Read more<i class="fa fa-book ml-2"></i></button>-->
 						</div>
 					</div>
@@ -146,16 +146,16 @@
 	<main id="main" class="container">
 		<hr/>
 		<section id="about">
-			<h2 class="display-4 text-center my-4">{{ about.title }}</h2>
-			<div class="text-center" v-html="about.text"></div>
+			<h2 class="display-4 text-center my-4 wow fadeInDown">{{ about.title }}</h2>
+			<div class="text-center wow fadeInRight" v-html="about.text"></div>
 		</section>
 
 		<hr/>
 		<section id="career">
-			<h2 class="display-4 text-center my-4">Career</h2>
+			<h2 class="display-4 text-center my-4 wow fadeInDown">Career</h2>
 			<div class="row mt-5">
 				<div class="col-md-12">
-					<ul class="stepper stepper-vertical timeline pl-0">
+					<ul class="stepper stepper-vertical timeline pl-0 wow fadeIn" style="">
 						<li v-for="(step, index) in career" :class="{ 'timeline-inverted': index % 2 !== 0 }">
 							<a href="#!">
 								<span class="circle primary-color z-depth-1-half" v-if="step.type === 'work'">
@@ -182,12 +182,12 @@
 
 		<hr/>
 		<section id="skills">
-			<h2 class="display-4 text-center my-4">Skills</h2>
+			<h2 class="display-4 text-center my-4 wow fadeInDown">Skills</h2>
 			<div class="row">
-				<div class=" col-sm-12 col-md-6 d-md-inline-block px-4">
+				<div class="col-sm-12 col-md-6 d-md-inline-block px-4 wow fadeInLeft">
 					<radar-chart class="chart p-4" :labels="skills.techStack.labels" :values="skills.techStack.values"></radar-chart>
 				</div>
-				<div class=" col-sm-12 col-md-6 d-md-inline-block px-4">
+				<div class="col-sm-12 col-md-6 d-md-inline-block px-4 wow fadeInRight">
 					<radar-chart class="chart p-4" :labels="skills.languages.labels" :values="skills.languages.values"></radar-chart>
 				</div>
 			</div>
@@ -195,10 +195,10 @@
 
 		<hr/>
 		<section id="projects">
-			<h2 class="display-4 text-center my-4">Projects</h2>
+			<h2 class="display-4 text-center my-4 wow fadeInDown">Projects</h2>
 			<div class="row">
 				<div v-for="project in projects" class="col-sm-12 col-md-6 col-lg-4 mb-4">
-					<div class="card card-body">
+					<div class="card card-body wow slideInUp">
 						<h4 class="card-header font-weight-bold text-center text-white primary-color mb-0" v-if="project.type === 'work'">
 							<i class="fa fa-briefcase" aria-hidden="true"></i>
 							<em class="ml-1">{{ project.name }}</em>
@@ -216,15 +216,15 @@
 
 		<hr style="display: none;"/>
 		<section id="blog" style="display: none;">
-			<h2 class="display-4 text-center my-4">Blog</h2>
+			<h2 class="display-4 text-center my-4 wow fadeInDown">Blog</h2>
 			<p></p>
 		</section>
 
 		<hr/>
 		<section id="contact">
-			<h2 class="display-4 mb-5 text-center">Let's chat...</h2>
+			<h2 class="display-4 mb-5 text-center wow fadeInDown">Let's chat...</h2>
 			<div class="row">
-				<div class="col-lg-5 col-md-12">
+				<div class="col-lg-5 col-md-12 wow slideInLeft">
 					<form class="p-5">
 						<div class="md-form form-sm"><i class="fa fa-user prefix grey-text"></i>
 							<input type="text" v-model="hiringMail.senderName" class="form-control form-control-sm">
@@ -248,7 +248,7 @@
 						</div>
 					</form>
 				</div>
-				<div class="col-lg-7 col-md-12">
+				<div class="col-lg-7 col-md-12 wow slideInRight">
 					<div class="row text-center">
 						<div class="col-lg-4 col-md-6 mb-3">
 							<p><i class="fa fa-phone fa-1x mr-2 grey-text"></i>{{ contact.mobile }}</p>
@@ -267,7 +267,7 @@
 		</section>
 	</main>
 
-	<footer class="page-footer text-center text-md-left font-small blue">
+	<footer class="page-footer text-center text-md-left font-small blue wow slideInUp">
 		<div class="footer-copyright py-3 text-center">
 			Email:
 			<a href="mailto:pradip9102@gmail.com">pradip9102@gmail.com</a>

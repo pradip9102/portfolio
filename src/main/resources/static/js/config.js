@@ -119,3 +119,17 @@ $(function() {
         }
     });
 });
+
+$(function() {
+    // initialize animation on scrolling
+    new WOW().init();
+
+    // intro animation
+    $('#intro').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        $("#intro .avatar").removeClass('invisible').addClass('animated fadeInDown');
+    });
+    $('#intro .avatar').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        $("#intro h2:eq(0)").removeClass('invisible').addClass('animated slideInRight');
+        $("#intro h2:eq(1)").removeClass('invisible').addClass('animated slideInLeft');
+    });
+});

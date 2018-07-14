@@ -27,7 +27,7 @@ html,
 body,
 header,
 #intro {
-    height: 95%;
+    height: 100%;
 }
 
 #header, #main {
@@ -72,4 +72,8 @@ ul#menuItem li.selected {
 
 #projects .card {
     height: 100%;
+}
+
+.wow {
+    visibility: hidden;
 }
