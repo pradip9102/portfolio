@@ -157,8 +157,8 @@
 			<h2 class="display-4 text-center my-4 wow fadeInDown">Career</h2>
 			<div class="row mt-5">
 				<div class="col-md-12">
-					<ul class="stepper stepper-vertical timeline pl-0 wow fadeIn" style="">
-						<li v-for="(step, index) in career" :class="{ 'timeline-inverted': index % 2 !== 0 }">
+					<ul class="stepper stepper-vertical timeline pl-0" style="">
+						<li v-for="(step, index) in career" class="wow" :class="{ 'timeline-inverted slideInRight': index % 2 !== 0, 'slideInLeft': index % 2 === 0 }">
 							<a href="#!">
 								<span class="circle primary-color z-depth-1-half" v-if="step.type === 'work'">
 									<i class="fa fa-briefcase" aria-hidden="true"></i>
@@ -273,7 +273,7 @@
 		</section>
 	</main>
 
-	<footer class="page-footer text-center text-md-left font-small blue wow slideInUp">
+	<footer class="page-footer text-center text-md-left font-small blue">
 		<div class="footer-copyright py-3 text-center">
 			Email:
 			<a href="mailto:pradip9102@gmail.com">pradip9102@gmail.com</a>
