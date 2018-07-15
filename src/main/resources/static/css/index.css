@@ -48,6 +48,14 @@ header,
     background-color: #24355C;
 }
 
+.menu-item {
+}
+
+.navbar .menu-item .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 ul#menuItem li.selected {
     font-weight: 700 !important;
 }

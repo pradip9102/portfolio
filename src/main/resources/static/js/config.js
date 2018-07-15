@@ -137,4 +137,10 @@ $(function() {
     /*$('#about h2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
         $('#about div').removeClass('invisible').addClass('animated  fadeInRight');
     });*/
+
+    // enable menu highlighting
+    $(".navbar .menu-item .nav-link").on('click', function(){
+       $(".navbar .menu-item .nav-link.active").removeClass("active");
+       $(this).addClass("active");
+    });
 });
