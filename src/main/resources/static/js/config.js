@@ -108,13 +108,13 @@ $(function() {
                 senderEmail: "",
                 senderSubject: "",
                 senderBody: "",
-                fullMail: "mailto:pradip9102@gmail.com",
             }
         },
         methods: {
             sendMail: function (event) {
-                this.fullMail = "mailto:pradip9102@gmail.com?subject=" + this.senderSubject + "&body="
-                        + "Hi Pradip, I am " + this.senderName + ". " + this.senderBody + "Email: " + this.senderEmail
+                if (event) event.preventDefault();
+                window.location.href = encodeURI("mailto:pradip9102@gmail.com?subject=" + this.hiringMail.senderSubject + "&body=" + "Hi Pradip,\n\n" + this.hiringMail.senderBody + "\n\nCheers,\n" + this.hiringMail.senderName + "\nEmail: " + this.hiringMail.senderEmail);
+                //$("#fullMailLink")[0].click();
             }
         }
     });
