@@ -54,13 +54,13 @@ $(function() {
             skills: {
                 techStack: {
                     name: "Technology",
-                    labels: ["Spring Boot", "Hibernate", "Thymeleaf", "Git", "SVN", "Jenkins", "Android", "AWS"],
-                    values: [8, 7, 8, 7, 8, 7, 2.5, 6]
+                    labels: ["Spring Boot", "Hibernate", "Thymeleaf", "Vue", "SVN", "Jenkins", "Android", "AWS", "GitHub"],
+                    values: [8.5, 7.0, 8.0, 7.0, 8.0, 7.0, 3.0, 6.0, 7.0]
                 },
                 languages: {
                     name: "Languages",
-                    labels: ["Kotlin", "Java", "HTML", "CSS", "Javascript", "Maven", "Gradle"],
-                    values: [8, 8, 6, 4, 7, 5, 8]
+                    labels: ["Kotlin", "Java", "HTML5", "CSS", "Javascript", "Maven", "Gradle"],
+                    values: [8, 8.5, 6.0, 4.0, 7.0, 6.0, 7.5]
                 }
             },
             projects: [
