@@ -19,15 +19,22 @@ $(function() {
         data: {
             about: {
                 title: 'About me',
-                text: "<p>Hi! I am <b style=\"font-weight: bold;\">Pradip Kumar Maharana</b>, just another graduate, who completed degree from NIT Raipur with major in ET&T. As being a practically involved aspirant, I spent most of my time working in different kind of projects (e.g. health related, robotics, image processing, etc). And soon enough I started feeling my groove in coding instead of chips and circuits despite taking that whole month long robotics training programme during second semester. So.. that's how I got into programming.</p><p>Now, I cut my creative teeth in Mumbai, where for over three years I've been collaborating with an amazing team of professionals - creating web applications that deliver intuitive UI/UX with the fastest possible response time. I have been part of the design process of complex components in early stages of application development, witnessed two projects going live from scratch as a core team member and also experienced those critical moments of production support 🤨. And when I'm done, I just sit back with pounding of rock music 🎧 and solve rubik's cube 🐿 or go out with friends to feel the beauty of nature 🌈 or ...</p>"
+                text: "<p>Hi! I am <b style=\"font-weight: bold;\">Pradip Kumar Maharana</b>, just another graduate, who completed degree from NIT Raipur with major in ET&T. As being a practically involved aspirant, I spent most of my time working on projects in different domains (e.g. health related, robotics, image processing, etc). And soon enough I started feeling my groove in coding instead of chips and circuits despite taking that whole month long robotics training programme during second semester. So.. that's how I got into programming.</p><p>I did cut my creative teeth in Mumbai, where for over three years I've been collaborating with an amazing team of professionals - creating web applications that deliver intuitive UI/UX with the fastest possible response time. I have been part of the design process of complex components in early stages of application development, witnessed two projects going live from scratch as a core team member and also experienced those critical moments of production support 🤨. And then I marched towards Bangalore seeking new experience and new adventure. Now, I am contributing to make the life of after sales a lot more fun.</p><p>In the meantime, I just sit back with pounding of rock music 🎧 and solve rubik's cube 🐿 or go out with friends to feel the beauty of nature 🌈 or ...</p>"
             },
             career: [
+                {
+                    type: "work",
+                    organisation: "Syncron",
+                    designation: "Senior software developer - Products / Price",
+                    description: "",
+                    duration: "February 2019 - Present"
+                },
                 {
                     type: "work",
                     organisation: "Virbac, India",
                     designation: "Senior software developer - IT Offshore",
                     description: "Being part of the IT Offshore team in India catering to requirements and specifications received from France (HQ) for International projects. To develop software, testing, implementation of end deliverables and conduct support operations for projects undertaken.",
-                    duration: "July 2018 - Present"
+                    duration: "July 2018 - February 2019"
                 },
                 {
                     type: 'work',
