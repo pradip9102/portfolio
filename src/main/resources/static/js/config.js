@@ -26,7 +26,7 @@ $(function() {
                     type: "work",
                     organisation: "Syncron",
                     designation: "Senior software developer - Products / Price",
-                    description: "",
+                    description: "Planning the roadmap for monolith to microservice transformation of Syncron Price product. Also, developing the first microservice (nms) to lead the way for the team.",
                     duration: "February 2019 - Present"
                 },
                 {
@@ -61,16 +61,21 @@ $(function() {
             skills: {
                 techStack: {
                     name: "Technology",
-                    labels: ["Spring Boot", "Hibernate", "Thymeleaf", "Vue", "SVN", "Jenkins", "Android", "AWS", "GitHub"],
-                    values: [8.5, 7.0, 8.0, 7.0, 8.0, 7.0, 3.0, 6.0, 7.0]
+                    labels: ["Spring Boot", "Hibernate", "Thymeleaf", "Vue", "Git", "Jenkins", "Android", "AWS"],
+                    values: [7.5, 8.5, 6.0, 5.0, 8.5, 6.0, 3.0, 2.0]
                 },
                 languages: {
                     name: "Languages",
                     labels: ["Kotlin", "Java", "HTML5", "CSS", "Javascript", "Maven", "Gradle"],
-                    values: [8, 8.5, 6.0, 4.0, 7.0, 6.0, 7.5]
+                    values: [6.5, 8.5, 6.0, 4.0, 7.0, 6.0, 7.5]
                 }
             },
             projects: [
+                {
+                    type: "work",
+                    name: "nms",
+                    description: "Notification(nms) microservice is the first microservice abstracted out of Syncron Price."
+                },
                 {
                     type: "work",
                     name: "e-Perf",
